@@ -24,6 +24,12 @@ body{
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   overflow: hidden;
 }
+@media (max-width: 768px) {
+
+  .BTN {
+    padding: 4px 10px;
+  }
+}
 
 .BTN::before {
   content: '';
