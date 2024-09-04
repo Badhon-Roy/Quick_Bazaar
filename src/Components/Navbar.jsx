@@ -23,12 +23,12 @@ const Navbar = () => {
                             </li>
                             <li>
                                 <NavLink
-                                    to="/messages"
+                                    to="/about"
                                     className={({ isActive, isPending }) =>
                                         isPending ? "pending" : isActive ? "text-[#fdc816] border px-3 py-1 rounded" : "text-white"
                                     }
                                 >
-                                    Messages
+                                    About
                                 </NavLink>
                             </li>
                             <li>
@@ -49,7 +49,7 @@ const Navbar = () => {
                     </a>
                 </div>
                 <div className="navbar-center hidden md:flex">
-                    <ul className="menu menu-horizontal px-1">
+                    <ul className="menu-horizontal px-1 flex gap-5">
                         <li>
                             <NavLink
                                 to="/"
@@ -62,22 +62,12 @@ const Navbar = () => {
                         </li>
                         <li>
                             <NavLink
-                                to="/messages"
+                                to="/about"
                                 className={({ isActive, isPending }) =>
                                     isPending ? "pending" : isActive ? "text-[#fdc816] border px-3 py-1 rounded" : "text-white"
                                 }
                             >
-                                Messages
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink
-                                to="/messages"
-                                className={({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "text-[#fdc816] border px-3 py-1 rounded" : "text-white"
-                                }
-                            >
-                                Messages
+                                About
                             </NavLink>
                         </li>
                     </ul>
